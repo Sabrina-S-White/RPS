@@ -37,22 +37,42 @@ function rps() {
     console.log("Your Choice:" + ' ' + choice);
 
     if ((randomPick === 'ROCK') && (choice === 'SCISSORS')) {
-        console.log("You lose!");
+        return 0;
     } else if ((randomPick === 'PAPER') && (choice === 'ROCK')) {
-        console.log("You lose!");
+        return 0;
     } else if ((randomPick === 'SCISSORS') && (choice === 'PAPER')) {
-        console.log("You lose!");
+        return 0;
     } else if ((randomPick === 'ROCK') && (choice === 'ROCK')) {
-        console.log("Tie, play again!");
+        return 1;
     } else if ((randomPick === 'PAPER') && (choice === 'PAPER')) {
-        console.log("Tie, play again!");
+        return 1;
     } else if ((randomPick === 'SCISSORS') && (choice === 'SCISSORS')) {
-        console.log("Tie, play again!");
+        return 1;
     } else if ((randomPick === 'ROCK') && (choice === 'PAPER')) {
-        console.log("You win!");
+        return 2;
     } else if ((randomPick === 'PAPER') && (choice === 'SCISSORS')) {
-        console.log("You win!");
+        return 2;
     } else if ((randomPick === 'SCISSORS') && (choice === 'ROCK')) {
-        console.log("You win!");
-    } else return "Error, try again."
+        return 2;
+    } else return "Error, try again.";
+}
+
+function game() {
+    let compScore = 0; 
+    let playScore = 0; 
+    let tieScore = 0;
+
+    
+    for (let i = 0; i < 5; i++) {
+        let round = rps();
+
+        if (round = 0) {
+            ++compScore;
+        } else if (round = 2) {
+            ++playScore;
+        } else ++tieScore;
+        console.log("You have played" + " " + (i + 1) + " " + "out of 5 times!")
+        console.log(compScore);
+        console.log(playScore);
+    }
 }
