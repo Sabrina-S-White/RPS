@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    height: 100vh;
+}
+
+body {
+    background-color:lightskyblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 100px;
+    padding: 100px;
+    gap: 20px;
+}
+
+button {
+    height: 50px;
+    width: 150px;
+    background-color:aquamarine;
+    font-weight: 700;
+    font-size: large;
+}
+
+#para {
+    font-size:larger;
+    font-weight: bolder;
+}
+
+#result {
+    font-size: large;
+    font-weight: 500;
+}
