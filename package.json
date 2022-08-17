@@ -1,0 +1,19 @@
+{
+  "name": "rps",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sabrina-S-White/RPS.git"
+  },
+  "author": "sabrina white",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sabrina-S-White/RPS/issues"
+  },
+  "homepage": "https://github.com/Sabrina-S-White/RPS#readme"
+}
