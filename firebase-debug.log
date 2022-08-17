@@ -1,0 +1,88 @@
+[debug] [2022-08-17T20:27:52.652Z] ----------------------------------------------------------------------
+[debug] [2022-08-17T20:27:52.653Z] Command:       /opt/homebrew/Cellar/node/18.7.0/bin/node /opt/homebrew/bin/firebase deploy
+[debug] [2022-08-17T20:27:52.653Z] CLI Version:   11.7.0
+[debug] [2022-08-17T20:27:52.653Z] Platform:      darwin
+[debug] [2022-08-17T20:27:52.653Z] Node Version:  v18.7.0
+[debug] [2022-08-17T20:27:52.654Z] Time:          Wed Aug 17 2022 14:27:52 GMT-0600 (Mountain Daylight Time)
+[debug] [2022-08-17T20:27:52.654Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-08-17T20:27:52.683Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-08-17T20:27:52.683Z] > authorizing via signed-in user (sabrina.scherma@gmail.com)
+[debug] [2022-08-17T20:27:52.684Z] [iam] checking project my-site-fa9b4 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-08-17T20:27:52.685Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-site-fa9b4:testIamPermissions [none]
+[debug] [2022-08-17T20:27:52.685Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-site-fa9b4:testIamPermissions x-goog-quota-user=projects/my-site-fa9b4
+[debug] [2022-08-17T20:27:52.685Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-site-fa9b4:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-08-17T20:27:52.901Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-site-fa9b4:testIamPermissions 200
+[debug] [2022-08-17T20:27:52.902Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-site-fa9b4:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-08-17T20:27:52.903Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/my-site-fa9b4 [none]
+[debug] [2022-08-17T20:27:53.167Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/my-site-fa9b4 200
+[debug] [2022-08-17T20:27:53.168Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/my-site-fa9b4 {"projectId":"my-site-fa9b4","projectNumber":"1091851523428","displayName":"My Site","name":"projects/my-site-fa9b4","resources":{"hostingSite":"my-site-fa9b4"},"state":"ACTIVE","etag":"1_318d6419-b73a-4d99-99ed-96da9e88924a"}
+[info] 
+[info] === Deploying to 'my-site-fa9b4'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-08-17T20:27:53.171Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/my-site-fa9b4 [none]
+[debug] [2022-08-17T20:27:53.468Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/my-site-fa9b4 200
+[debug] [2022-08-17T20:27:53.468Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/my-site-fa9b4 {"projectId":"my-site-fa9b4","projectNumber":"1091851523428","displayName":"My Site","name":"projects/my-site-fa9b4","resources":{"hostingSite":"my-site-fa9b4"},"state":"ACTIVE","etag":"1_318d6419-b73a-4d99-99ed-96da9e88924a"}
+[debug] [2022-08-17T20:27:53.472Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/1091851523428/sites/my-site-fa9b4/versions [none]
+[debug] [2022-08-17T20:27:53.472Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/1091851523428/sites/my-site-fa9b4/versions {"config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-08-17T20:27:53.986Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/1091851523428/sites/my-site-fa9b4/versions 500
+[debug] [2022-08-17T20:27:53.986Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/1091851523428/sites/my-site-fa9b4/versions {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2022-08-17T20:27:54.101Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500
+  }
+}
+[debug] [2022-08-17T20:28:59.756Z] ----------------------------------------------------------------------
+[debug] [2022-08-17T20:28:59.757Z] Command:       /opt/homebrew/Cellar/node/18.7.0/bin/node /opt/homebrew/bin/firebase deploy
+[debug] [2022-08-17T20:28:59.757Z] CLI Version:   11.7.0
+[debug] [2022-08-17T20:28:59.757Z] Platform:      darwin
+[debug] [2022-08-17T20:28:59.757Z] Node Version:  v18.7.0
+[debug] [2022-08-17T20:28:59.758Z] Time:          Wed Aug 17 2022 14:28:59 GMT-0600 (Mountain Daylight Time)
+[debug] [2022-08-17T20:28:59.758Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-08-17T20:28:59.789Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-08-17T20:28:59.789Z] > authorizing via signed-in user (sabrina.scherma@gmail.com)
+[debug] [2022-08-17T20:28:59.789Z] [iam] checking project my-site-fa9b4 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-08-17T20:28:59.790Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-site-fa9b4:testIamPermissions [none]
+[debug] [2022-08-17T20:28:59.790Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-site-fa9b4:testIamPermissions x-goog-quota-user=projects/my-site-fa9b4
+[debug] [2022-08-17T20:28:59.790Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-site-fa9b4:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-08-17T20:28:59.992Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-site-fa9b4:testIamPermissions 200
+[debug] [2022-08-17T20:28:59.993Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-site-fa9b4:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-08-17T20:28:59.994Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/my-site-fa9b4 [none]
+[debug] [2022-08-17T20:29:00.240Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/my-site-fa9b4 200
+[debug] [2022-08-17T20:29:00.240Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/my-site-fa9b4 {"projectId":"my-site-fa9b4","projectNumber":"1091851523428","displayName":"My Site","name":"projects/my-site-fa9b4","resources":{"hostingSite":"my-site-fa9b4"},"state":"ACTIVE","etag":"1_318d6419-b73a-4d99-99ed-96da9e88924a"}
+[info] 
+[info] === Deploying to 'my-site-fa9b4'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-08-17T20:29:00.244Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/my-site-fa9b4 [none]
+[debug] [2022-08-17T20:29:00.458Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/my-site-fa9b4 200
+[debug] [2022-08-17T20:29:00.459Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/my-site-fa9b4 {"projectId":"my-site-fa9b4","projectNumber":"1091851523428","displayName":"My Site","name":"projects/my-site-fa9b4","resources":{"hostingSite":"my-site-fa9b4"},"state":"ACTIVE","etag":"1_318d6419-b73a-4d99-99ed-96da9e88924a"}
+[debug] [2022-08-17T20:29:00.462Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/1091851523428/sites/my-site-fa9b4/versions [none]
+[debug] [2022-08-17T20:29:00.462Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/1091851523428/sites/my-site-fa9b4/versions {"config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-08-17T20:29:00.956Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/1091851523428/sites/my-site-fa9b4/versions 500
+[debug] [2022-08-17T20:29:00.957Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/1091851523428/sites/my-site-fa9b4/versions {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2022-08-17T20:29:01.078Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500
+  }
+}
